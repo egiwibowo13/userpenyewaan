@@ -13,7 +13,6 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { ItemdetailComponent } from './itemdetail/itemdetail.component';
 import { RentformComponent } from './rentform/rentform.component';
 import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
 import { ProfilComponent } from './profil/profil.component';
 import { RentdetailComponent } from './profil/rentdetail/rentdetail.component';
 import { SearchComponent } from './search/search.component';
@@ -23,7 +22,6 @@ let routes : Routes = [
   {path:"item/detail/:id",component:ItemdetailComponent},
   {path:"item/rent/:id",component:RentformComponent},
   {path:"login",component:LoginComponent},
-  {path:"register",component:RegisterComponent},
   {path:"profile/:id",component:ProfilComponent},
   {path:"profil/rentdetail/:id",component:RentdetailComponent},
   {path:"search/:id",component:SearchComponent},
@@ -39,7 +37,6 @@ let routes : Routes = [
     ItemdetailComponent,
     RentformComponent,
     LoginComponent,
-    RegisterComponent,
     ProfilComponent,
     RentdetailComponent,
     SearchComponent
@@ -49,6 +46,7 @@ let routes : Routes = [
     FormsModule,
     HttpModule,
     RouterModule.forRoot(routes),
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
