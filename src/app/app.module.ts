@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule,Routes } from '@angular/router';
 import { FormsModule, NgModel } from '@angular/forms';
 import { HttpModule} from '@angular/http';
-import { DaterangepickerModule } from 'angular-2-daterangepicker';
+
 
 import { AppComponent } from './app.component';
 import { IndexfooterComponent } from './indexfooter/indexfooter.component';
@@ -49,7 +49,6 @@ let routes : Routes = [
     FormsModule,
     HttpModule,
     RouterModule.forRoot(routes),
-    DaterangepickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
