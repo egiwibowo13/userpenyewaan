@@ -17,10 +17,12 @@ export class IndexheaderComponent implements OnInit {
   dataLogout : String;
   dataButton : String;
   usernamePenyewa : String;
+  NamaBarang : String;
 
   constructor(private http:Http) { }
 
   ngOnInit() {
+    this.NamaBarang="";
       this.dataLogin= new Data();
       this.dataRegister = new DataRegister();
       if(localStorage.getItem("username")==null){
